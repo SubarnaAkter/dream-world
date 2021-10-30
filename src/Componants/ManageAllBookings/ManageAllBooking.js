@@ -11,7 +11,7 @@ const ManageAllBooking = () => {
             .then(data => setAllBooking(data)
             );
     }, []);
-
+  
     const handleCancel = (id) => {
         const cancelConfirmed = window.confirm("Are you Sure? You want to Cancel this Booking!");
 
@@ -37,7 +37,6 @@ const ManageAllBooking = () => {
 
     const handleConfirm = (id) => {
       
-       
         fetch(`http://localhost:5000/bookings/${id}`, {
             method: 'put',
             headers: {
@@ -48,7 +47,7 @@ const ManageAllBooking = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.modifiedCount > 0) {
-                    alert("updated Successfully");
+                    alert("Booking Confirmed");
                    
                 }
             })

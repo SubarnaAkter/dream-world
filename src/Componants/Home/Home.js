@@ -9,18 +9,15 @@ const Home = () => {
 
         <div>
           
-              
-           
-          
             <div className="banner text-white pt-5 py-5">
                 <h1 className="pt-5 py-3">We Have everything for a perfect rest</h1>
                 <h5>Thers's Nothing more exciting than spending whole day in our Dream Land park</h5>
             </div>
            
         <div className= "container my-5">
-           <div className="row row-cols-1 row-cols-md-3 g-5">
+           <div className="row row-cols-1 row-cols-md-3 ">
                 <div className="col">
-                    <div className="card h-100 river-rides py-5">
+                    <div className="card h-100 river-rides py-5 ">
                     <i className="fas fa-water icon"></i>
                         <div className="card-body mt-5">
                             <h5 className="card-title">River Rides</h5>
@@ -47,7 +44,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="row g-4 my-4">
+            <div className="row  my-4">
                 <div className="col">
                     <div className="card adventure">
                         
@@ -67,7 +64,7 @@ const Home = () => {
 
                     {
                         packages.map(isPackage => <Package
-                            key={isPackage.key}
+                            key={isPackage._id}
                             isPackage={isPackage}
                         ></Package>
 
