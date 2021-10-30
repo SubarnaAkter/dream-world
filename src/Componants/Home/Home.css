@@ -1,0 +1,32 @@
+.banner{
+    background-image: url('https://image.freepik.com/free-vector/vector-concept-background-with-night-city_1441-2742.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    
+}
+.icon{
+    font-size: 150px;
+    color:white;
+}
+.river-rides{
+    background-color: rgba(29, 4, 82, 0.904);
+    color:white
+}
+.water-slide{
+    background-color: rgba(4, 76, 82, 0.904);
+    color:white
+}
+.pools{
+    background-color: rgba(62, 75, 5, 0.904);
+    color:white
+}
+.thumb{
+    background-image: url('https://thumbs.gfycat.com/DeadlyJointGoose-small.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.adventure{
+    height: 500px;
+}
