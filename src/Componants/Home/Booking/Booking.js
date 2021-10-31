@@ -10,14 +10,14 @@ const Booking = () => {
     const {user}=useAuth();
 
     useEffect(()=>{
-     fetch(`http://localhost:5000/packages/${packageId}`)
+     fetch(`https://shrouded-peak-64401.herokuapp.com/packages/${packageId}`)
      .then(res=>res.json())
      .then(data=>setBooking(data));
     },[]);
     const { register, handleSubmit } = useForm();
     ///post
   const onSubmit = data => {
-     axios.post('http://localhost:5000/bookings',data)
+     axios.post('https://shrouded-peak-64401.herokuapp.com/bookings',data)
      .then(res=>{
       if(res.data.insertedId)
       {

@@ -9,7 +9,7 @@ const Package = (props) => {
     return (
         <div>
               <Col>
-                <Card className="pb-3 ">
+                <Card className="pb-3 card-style ">
                     <Card.Img variant="top" className="thumb" src={img} />
                     <Card.Body>
                         <Card.Title className="text-center fw-bold">{packageName}</Card.Title>

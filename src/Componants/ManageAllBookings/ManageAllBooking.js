@@ -4,19 +4,19 @@ import { Table } from 'react-bootstrap';
 
 const ManageAllBooking = () => {
     const [allBooking, setAllBooking] = useState([]);
-
+    const [status,setStatus]=useState('Pending')
     useEffect(() => {
-        fetch(`http://localhost:5000/bookings`)
+        fetch(`https://shrouded-peak-64401.herokuapp.com/bookings`)
             .then(res => res.json())
             .then(data => setAllBooking(data)
             );
-    }, []);
+    }, [status]);
   
     const handleCancel = (id) => {
         const cancelConfirmed = window.confirm("Are you Sure? You want to Cancel this Booking!");
 
         if (cancelConfirmed) {
-            fetch(`http://localhost:5000/bookings/${id}`, {
+            fetch(`https://shrouded-peak-64401.herokuapp.com/bookings/${id}`, {
                 method: "DELETE",
             })
                 .then(res => res.json())
@@ -24,7 +24,7 @@ const ManageAllBooking = () => {
 
 
                     if (data.deletedCount > 0) {
-                        alert("Booking Canceled");
+                        alert("Booking Canceled?");
                         const remaining = allBooking.filter(booking => booking._id !== id)
                         setAllBooking(remaining)
                     }
@@ -36,8 +36,9 @@ const ManageAllBooking = () => {
    
 
     const handleConfirm = (id) => {
-      
-        fetch(`http://localhost:5000/bookings/${id}`, {
+       
+        
+        fetch(`https://shrouded-peak-64401.herokuapp.com/bookings/${id}`, {
             method: 'put',
             headers: {
                 'content-type': 'application/json'
@@ -46,12 +47,14 @@ const ManageAllBooking = () => {
         })
             .then(res => res.json())
             .then(data => {
+
+                setStatus('Approved')
                 if (data.modifiedCount > 0) {
                     alert("Booking Confirmed");
                    
                 }
             })
-
+           
         
     }
     return (

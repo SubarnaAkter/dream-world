@@ -7,7 +7,9 @@ const PrivateRoute = ({children , ...rest}) => {
     const {user,isLoading}= useAuth();
 
     if (isLoading) {
-        return <div className=" text-center " >
+        return <div className=" text-center m-5 p-5 g-2" >
+           <Spinner animation="grow" />
+           <Spinner animation="grow" />
            <Spinner animation="grow" />
         </div>
     }

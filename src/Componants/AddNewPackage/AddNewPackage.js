@@ -7,7 +7,7 @@ const AddNewPackage = () => {
 
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/packages',data)
+        axios.post('https://shrouded-peak-64401.herokuapp.com/packages',data)
         .then(res=>{
          if(res.data.insertedId)
          {

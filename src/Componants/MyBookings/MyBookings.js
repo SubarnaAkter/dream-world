@@ -6,7 +6,7 @@ const MyBookings = () => {
        const {user}=useAuth()
     const [myBookings,setMyBookings]=useState([])
     useEffect(()=>{
-        fetch(`http://localhost:5000/bookings`)
+        fetch(`https://shrouded-peak-64401.herokuapp.com/bookings`)
         .then(res=>res.json())
         .then(data=>{
           const myBookings=  data.filter(order=>order.email===user.email)
@@ -19,7 +19,7 @@ const MyBookings = () => {
                const confirmed=window.confirm("Want to Delete Your Booking?");
 
                if(confirmed){
-                fetch(`http://localhost:5000/bookings/${id}`,{
+                fetch(`https://shrouded-peak-64401.herokuapp.com/bookings/${id}`,{
                     method:"DELETE",
                 })
                 .then(res=>res.json())

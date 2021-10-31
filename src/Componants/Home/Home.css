@@ -21,7 +21,7 @@
     background-color: rgba(62, 75, 5, 0.904);
     color:white
 }
-.thumb{
+.thumbnail{
     background-image: url('https://thumbs.gfycat.com/DeadlyJointGoose-small.gif');
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,4 +29,12 @@
 }
 .adventure{
     height: 500px;
+}
+.about-info{
+    background-image: url('https://themeparkarchitect.com/wp-content/uploads/2019/05/carnival-fair-fairground-40547.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    
 }

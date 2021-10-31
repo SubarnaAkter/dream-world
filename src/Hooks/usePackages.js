@@ -5,7 +5,7 @@ const usePackages = () => {
 
     useEffect(()=>{
         
-        fetch('http://localhost:5000/packages')
+        fetch('https://shrouded-peak-64401.herokuapp.com/packages')
         .then(res=>res.json())
         .then(data=>setPackages(data))
       
