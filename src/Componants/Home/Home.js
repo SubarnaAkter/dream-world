@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Spinner } from 'react-bootstrap';
+import { Row,  } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import usePackages from '../../Hooks/usePackages';
 import './Home.css'
@@ -80,7 +80,7 @@ const Home = () => {
                 <div className="card-body about-info">
                     <h1 className="card-title text-white mt-5 py-5 fs-1 fw-bold">We have everything <br /> you want and need to make <br /> your experience safe & comfortable!</h1>
                     <p className="card-text text-white pb-5">All the rides are guaranteed to be safe, and our lifeguards are always ready to help in case of any danger or emergency..</p>
-                    <Link to="/About" className="btn btn-primary">More About Us</Link>
+                    <Link to="/About" className="btn btn-info fw-bold">More About Us</Link>
                 </div>
 
             </div>
@@ -90,7 +90,7 @@ const Home = () => {
                 <div className="col-sm-6">
                     <div className="card border-0">
                         <div className="card-body">
-                                   <img  className="w-100" src="https://thumbs.dreamstime.com/b/kids-swimming-pool-20339929.jpg" alt="" />
+                                   <img  className="w-100" src="https://image.freepik.com/free-photo/boys-having-fun-swimming-pool-with-pool-float-water-gun_23-2149025413.jpg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,9 @@ const Home = () => {
                         <div className="card-body text-start">
                             <h1 className="card-title fs-1 fw-bold">Leave your worries <br /> behind  and chill</h1>
                             <p className="card-text">We provide amazing experiences and create safe adventures for you at the same time. Active and passive leisure alternatives are available.</p>
-                            
+                            <Link to="/Contact" >
+                                <button className="btn-regular"> Contact Us</button>
+                               </Link>
                         </div>
                     </div>
                 </div>

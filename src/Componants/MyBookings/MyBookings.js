@@ -57,7 +57,7 @@ const MyBookings = () => {
                  
                   <Button onClick={()=>{
                       handleCancelBooking(myBooking._id)
-                  }} variant="primary" className="mx-1">Cancel Booking</Button>
+                  }} variant="danger" className="mx-1">Cancel Booking</Button>
                   
               </Card.Body>
           </Card>)

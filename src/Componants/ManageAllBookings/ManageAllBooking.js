@@ -86,14 +86,14 @@ const ManageAllBooking = () => {
                                 <td>{booking.packageName}</td>
                                 <td >{booking.status}</td>
                                 <td >
-                                    <button onClick={() => {
+                                    <button  onClick={() => {
                                         handleConfirm(booking._id)}
-                                        } className="me-3">Confirm Booking
+                                        } className="me-3 btn btn-success">Confirm Booking
                                     </button>
 
                                     <button onClick={() => {
                                         handleCancel(booking._id)
-                                    }} className="mx-3">Cancel Booking
+                                    }} className="mx-3 btn btn-danger">Cancel Booking
                                     </button>
                                 </td>
 

@@ -20,7 +20,7 @@ const Package = (props) => {
                     </Card.Body>
 
                     <Link to={`/Booking/${_id}`}>
-                <button className="btn btn-warning">Book Now </button>
+                <button className="btn-regular">Book Now </button>
             </Link>
                 </Card>
             </Col>
