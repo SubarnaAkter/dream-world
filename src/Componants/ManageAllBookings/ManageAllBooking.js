@@ -4,13 +4,13 @@ import { Table } from 'react-bootstrap';
 
 const ManageAllBooking = () => {
     const [allBooking, setAllBooking] = useState([]);
-    const [status,setStatus]=useState('Pending')
+    
     useEffect(() => {
         fetch(`https://shrouded-peak-64401.herokuapp.com/bookings`)
             .then(res => res.json())
             .then(data => setAllBooking(data)
             );
-    }, [status]);
+    }, []);
   
     const handleCancel = (id) => {
         const cancelConfirmed = window.confirm("Are you Sure? You want to Cancel this Booking!");
@@ -48,7 +48,7 @@ const ManageAllBooking = () => {
             .then(res => res.json())
             .then(data => {
 
-                setStatus('Approved')
+              
                 if (data.modifiedCount > 0) {
                     alert("Booking Confirmed");
                    
