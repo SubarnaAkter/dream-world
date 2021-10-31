@@ -20,6 +20,7 @@ const AddNewPackage = () => {
    
     return (
         <div>
+            <h1 className="pt-5">Add a New Package</h1>
             <div>
     <form  className="w-50 mx-auto m-5" onSubmit={handleSubmit(onSubmit)}>
 
@@ -33,7 +34,7 @@ const AddNewPackage = () => {
       <input placeholder="Enter image Url"  className="w-100 p-2 m-1 " type="img" {...register("img")} /> <br />
       
     
-      <input className="w-100 p-2 m-1" type="submit"  />
+      <input className="w-100 p-2 m-1 btn-regular" type="submit"  />
     </form>
     </div>
         </div>

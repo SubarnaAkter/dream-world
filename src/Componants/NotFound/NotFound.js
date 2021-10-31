@@ -3,7 +3,7 @@ import React from 'react';
 const NotFound = () => {
     return (
         <div>
-            404
+          <h1 className="text-danger py-5 my-5">404! Not Found</h1>
         </div>
     );
 };

@@ -11,7 +11,7 @@ const Headers = () => {
             <Navbar className="nav-menu" sticky="top" collapseOnSelect expand="lg" variant="dark">
                 <Container>
                     <Navbar.Brand ><span className=" fw-bold">
-                        Dream World</span></Navbar.Brand>
+                    <i className="fas  fa-swimming-pool"></i>  Dream World</span></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto ">
