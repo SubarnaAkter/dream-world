@@ -1,13 +1,16 @@
 import React from 'react';
-import { Row,  } from 'react-bootstrap';
+import { Row, Spinner,  } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import usePackages from '../../Hooks/usePackages';
 import './Home.css'
 import Package from './Package';
 const Home = () => {
-    const [packages] = usePackages();
+    const [packages,,loading] = usePackages();
+    if(loading){
+      return  <Spinner animation="border" />
+    }
     return (
-
+          
         <div>
 
             <div className="banner text-white pt-5 py-5">
