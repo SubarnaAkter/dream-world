@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
 
 const Booking = () => {
@@ -21,7 +22,7 @@ const Booking = () => {
      .then(res=>{
       if(res.data.insertedId)
       {
-          alert("Order Placed Successfully")
+          alert("Booking Placed Successfully")
       }
      })
   }
@@ -50,7 +51,8 @@ const Booking = () => {
       <input placeholder="Enter your Address"  className="w-100 p-2 m-1 " type="text" {...register("address")} /> <br />
       <input placeholder="Enter Contact No."  className="w-100 p-2 m-1" type="number" {...register("contact")} /> <br />
       <input   defaultValue="pending" className="w-100 p-2 m-1" type="text" {...register("status")} hidden/> <br />
-      <input className="w-100 p-2 m-1" type="submit" value="Place Order" />
+      <input className="w-100 p-2 m-1 bg-success text-white fw-bold" type="submit" value="Place Booking" />
+      <Link to="/myBookings"><button className="btn-regular">See my Orders</button></Link>
     </form>
     </div>
   </div>
