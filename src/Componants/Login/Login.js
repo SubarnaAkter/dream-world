@@ -24,6 +24,7 @@ const Login = () => {
         <div>
            <div className="m-5 bg-info py-5 w-50 mx-auto">
            <h3>Please Login</h3>
+           <p className="text-white bg-danger">{error}</p>
             <button className="btn-regular" onClick={handleSignInUsingGoogle}>Google Sign in</button>
            </div>
         </div>

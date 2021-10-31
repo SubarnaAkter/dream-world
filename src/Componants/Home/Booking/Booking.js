@@ -52,7 +52,7 @@ const Booking = () => {
       <input placeholder="Enter Contact No."  className="w-100 p-2 m-1" type="number" {...register("contact")} /> <br />
       <input   defaultValue="pending" className="w-100 p-2 m-1" type="text" {...register("status")} hidden/> <br />
       <input className="w-100 p-2 m-1 bg-success text-white fw-bold" type="submit" value="Place Booking" />
-      <Link to="/myBookings"><button className="btn-regular">See my Orders</button></Link>
+      <Link to="/myBookings"><button className="btn-regular">See my Booking</button></Link>
     </form>
     </div>
   </div>
