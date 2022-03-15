@@ -1,10 +1,7 @@
 # Getting Started with Dream World
 
-This project was bootstrapped with [Dream World](https://dream-world-8d5e9.web.app/).
+Live site Link: [Dream World](https://dream-world-8d5e9.web.app/).
 
-## Available Scripts
-
-In the project directory, you can run:
 
 ### `Used Technology`
 
